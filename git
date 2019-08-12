@@ -13,4 +13,4 @@ git reset 'HEAD@{X} : use git reflog to find the HEAD postion you want to go bac
 	replace X with the number you want
 	This is how you can undo a git reset
 create [repo name] : create a repo on github, uses hub alias
-	- see .howto/hub for more info
+	- see .about/hub for more info
