@@ -16,7 +16,7 @@ about_contents.each do |file|
         puts "Already have alias #{file_name}p "
     else
         open(alias_file, 'a'){|f| f.puts "alias #{file_name}p='cat ~/.about/#{file_name}'\n" }
+        puts "    Added #{file_name}p "
     end
 end
-puts "Reloading ~/.alias.sh so new aliases are immediately available"
-system("source alias_file")
+puts "You will need to manually source ~/.alias.sh or ~/.zshrc to have access to any new alias"
