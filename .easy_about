@@ -1,0 +1,22 @@
+#Created by Joel Taddei
+p() {
+    if [ "$1" != "" ]
+    then
+        less ~/.about/"$1"
+    fi
+}
+
+#My additions
+pvim() {
+    if [ "$1" != "" ]
+    then
+        vim ~/.about/"$1"
+    fi
+}
+
+prm() {
+    if [ "$1" != "" ]
+    then
+        rm ~/.about/"$1"
+    fi
+}
